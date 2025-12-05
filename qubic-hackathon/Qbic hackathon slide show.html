@@ -398,14 +398,14 @@
             
             .slide {
                 width: 100% !important;
-                height: auto;
-                min-height: 280mm !important;
-                max-height: none !important;
+                height: 297mm !important;
+                max-height: 297mm !important;
+                min-height: 297mm !important;
                 page-break-after: always;
                 page-break-inside: avoid;
                 display: flex !important;
-                overflow: visible;
-                padding: 25mm 18mm !important;
+                overflow: hidden !important;
+                padding: 20mm 15mm !important;
                 margin: 0;
                 position: relative;
                 flex-direction: column;
@@ -450,28 +450,6 @@
             p {
                 font-size: 14pt;
             }
-
-            /* Per-slide padding adjustments for perfect A4 fit - All 20 slides uniform */
-            .slide-1 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-2 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-3 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-4 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-5 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-6 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-7 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-8 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-9 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-10 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-11 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-12 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-13 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-14 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-15 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-16 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-17 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-18 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-19 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
-            .slide-20 { padding: 27.5mm 18mm !important; min-height: 285mm !important; }
         }
 
         /* Scroll snap for better viewing */
@@ -524,20 +502,20 @@
         <!-- SLIDE 2: The Problem - Emotional -->
         <div class="slide slide-2">
             <div class="content">
-                <h1 class="hero" style="text-align: center; margin-bottom: 40px;">
-                    <span class="hero-accent">52 MILLION</span><br>
+                <h1 class="hero" style="text-align: center; margin-bottom: 20px; font-size: 3.2rem;">
+                    <span class="hero-accent" style="font-size: 3.2rem;">52 MILLION</span><br>
                     South Africans Suffer Daily
                 </h1>
-                <p class="subtitle" style="font-size: 2.8rem; margin-bottom: 60px;">
+                <p class="subtitle" style="font-size: 2rem; margin-bottom: 30px;">
                     Life-saving medical equipment sits IDLE in rural clinics<br>
                     <span class="emphasis">NO SPECIALIST DOCTORS</span><br>
                     <span class="emphasis">NO FAST DIAGNOSIS</span><br>
                     <span class="emphasis">PEOPLE DIE</span>
                 </p>
-                <div style="text-align: center; font-size: 1.8rem; opacity: 0.95;">
-                    <p>❤️ A mother watches her child struggle for breath</p>
-                    <p style="margin-top: 20px;">⏰ A CT scan shows a treatable stroke</p>
-                    <p style="margin-top: 20px;">💔 But there's no specialist for 4+ hours away</p>
+                <div style="text-align: center; font-size: 1.2rem; opacity: 0.95;">
+                    <p style="margin-bottom: 8px;">❤️ A mother watches her child struggle for breath</p>
+                    <p style="margin-bottom: 8px;">⏰ A CT scan shows a treatable stroke</p>
+                    <p>💔 But there's no specialist for 4+ hours away</p>
                 </div>
             </div>
             <div class="slide-number">2</div>
@@ -571,28 +549,28 @@
         <!-- SLIDE 4: The Solution -->
         <div class="slide slide-4">
             <div class="content">
-                <h1 class="hero" style="text-align: center;">
-                    <span class="hero-accent">UBUNTU PATIENT CARE</span><br>
-                    <span style="font-size: 3.5rem; opacity: 0.95;">Specialist Care in Under 15 Minutes</span>
+                <h1 class="hero" style="text-align: center; margin-bottom: 15px;">
+                    <span class="hero-accent" style="font-size: 2.8rem;">UBUNTU PATIENT CARE</span><br>
+                    <span style="font-size: 2.2rem; opacity: 0.95;">Specialist Care in Under 15 Minutes</span>
                 </h1>
-                <div class="grid-3" style="margin-top: 60px;">
-                    <div class="card">
-                        <div class="card-icon">⚡</div>
-                        <h3>EDGE AI TRIAGE</h3>
-                        <p>Analyze scans INSTANTLY on local hardware. No internet needed.</p>
+                <div class="grid-3" style="margin-top: 20px; gap: 15px;">
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">⚡</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">EDGE AI TRIAGE</h3>
+                        <p style="font-size: 0.9rem;">Analyze scans INSTANTLY on local hardware. No internet needed.</p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">📉</div>
-                        <h3>90% DATA REDUCTION</h3>
-                        <p>Only critical 20MB sent, not 200MB. Works on 3G.</p>
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">📉</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">90% DATA REDUCTION</h3>
+                        <p style="font-size: 0.9rem;">Only critical 20MB sent, not 200MB. Works on 3G.</p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">🌍</div>
-                        <h3>100% UPTIME PROMISE</h3>
-                        <p>Offline-first design. Works anywhere, anytime.</p>
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">🌍</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">100% UPTIME PROMISE</h3>
+                        <p style="font-size: 0.9rem;">Offline-first design. Works anywhere, anytime.</p>
                     </div>
                 </div>
-                <div class="emphasis" style="margin-top: 60px; font-size: 2.8rem;">
+                <div class="emphasis" style="margin-top: 20px; font-size: 2rem;">
                     From 4 HOURS → <span style="color: var(--navy); text-shadow: none;">UNDER 15 MINUTES</span>
                 </div>
             </div>
@@ -686,31 +664,31 @@
         <!-- SLIDE 8: The Credential System -->
         <div class="slide slide-8">
             <div class="content">
-                <h1 class="hero" style="text-align: center;">
+                <h1 class="hero" style="text-align: center; font-size: 2.8rem; margin-bottom: 10px;">
                     QUBIC CREDENTIAL<br>
-                    <span style="font-size: 3.5rem; opacity: 0.9;">The Future of Trust</span>
+                    <span style="font-size: 2rem; opacity: 0.9;">The Future of Trust</span>
                 </h1>
-                <div class="grid-3" style="margin-top: 60px;">
-                    <div class="card">
-                        <div class="card-icon">📜</div>
-                        <h3>OLD: Static Titles</h3>
-                        <p style="font-size: 1.3rem;">Degrees don't prove you're contributing NOW</p>
+                <div class="grid-3" style="margin-top: 20px; gap: 12px;">
+                    <div class="card" style="padding: 12px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">📜</div>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0;">OLD: Static Titles</h3>
+                        <p style="font-size: 0.85rem;">Degrees don't prove you're contributing NOW</p>
                     </div>
-                    <div class="card" style="background: var(--spring-gold); color: var(--navy); border: none; transform: scale(1.05);">
-                        <div class="card-icon" style="font-size: 3rem; color: var(--navy);">✨</div>
-                        <h3 style="color: var(--navy);">NEW: Dynamic Credential</h3>
-                        <p style="color: var(--navy); font-size: 1.3rem; font-weight: 600;">Proof of DAILY impact & code quality</p>
+                    <div class="card" style="background: var(--spring-gold); color: var(--navy); border: none; transform: scale(1.02); padding: 12px;">
+                        <div class="card-icon" style="font-size: 1.8rem; color: var(--navy);">✨</div>
+                        <h3 style="color: var(--navy); font-size: 1.1rem; margin: 6px 0;">NEW: Dynamic Credential</h3>
+                        <p style="color: var(--navy); font-size: 0.85rem; font-weight: 600;">Proof of DAILY impact & code quality</p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">🔗</div>
-                        <h3>ON QUBIC: Immutable</h3>
-                        <p style="font-size: 1.3rem;">Can't fake it. Everyone can verify.</p>
+                    <div class="card" style="padding: 12px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">🔗</div>
+                        <h3 style="font-size: 1.1rem; margin: 6px 0;">ON QUBIC: Immutable</h3>
+                        <p style="font-size: 0.85rem;">Can't fake it. Everyone can verify.</p>
                     </div>
                 </div>
-                <div style="background: rgba(255, 215, 0, 0.15); border: 3px solid var(--spring-gold); border-radius: 20px; padding: 40px; margin-top: 60px; text-align: center;">
-                    <p style="font-size: 1.5rem; margin-bottom: 15px;">Your Credential Score:</p>
-                    <p style="font-size: 4.5rem; color: var(--spring-gold); font-weight: 900;">46 / 50</p>
-                    <p style="font-size: 1.8rem; margin-top: 15px;"><strong>92% Technical Merit</strong></p>
+                <div style="background: rgba(255, 215, 0, 0.15); border: 3px solid var(--spring-gold); border-radius: 20px; padding: 15px; margin-top: 15px; text-align: center;">
+                    <p style="font-size: 1rem; margin-bottom: 8px;">Your Credential Score:</p>
+                    <p style="font-size: 2.5rem; color: var(--spring-gold); font-weight: 900;">46 / 50</p>
+                    <p style="font-size: 1.1rem; margin-top: 8px;"><strong>92% Technical Merit</strong></p>
                 </div>
             </div>
             <div class="slide-number">8</div>
@@ -932,24 +910,24 @@
         <!-- SLIDE 17: Call to Action -->
         <div class="slide slide-17">
             <div class="content">
-                <h1 class="hero" style="text-align: center;">
+                <h1 class="hero" style="text-align: center; margin-bottom: 15px;">
                     WHAT WE NEED
                 </h1>
-                <div class="grid-3" style="margin-top: 60px;">
-                    <div class="card">
-                        <div class="card-icon">🎯</div>
-                        <h3>MENTORSHIP</h3>
-                        <p style="font-size: 1.3rem;">Navigate the Qubic ecosystem. Optimize for AIGARTH.</p>
+                <div class="grid-3" style="margin-top: 20px; gap: 12px;">
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">🎯</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">MENTORSHIP</h3>
+                        <p style="font-size: 0.95rem;">Navigate the Qubic ecosystem. Optimize for AIGARTH.</p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">💪</div>
-                        <h3>RESOURCES</h3>
-                        <p style="font-size: 1.3rem;">Scale deployment. Reach more clinics. Save more lives.</p>
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">💪</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">RESOURCES</h3>
+                        <p style="font-size: 0.95rem;">Scale deployment. Reach more clinics. Save more lives.</p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">🤝</div>
-                        <h3>PARTNERSHIP</h3>
-                        <p style="font-size: 1.3rem;">Build the future of healthcare together on Qubic.</p>
+                    <div class="card" style="padding: 15px;">
+                        <div class="card-icon" style="font-size: 1.8rem;">🤝</div>
+                        <h3 style="font-size: 1.2rem; margin: 8px 0;">PARTNERSHIP</h3>
+                        <p style="font-size: 0.95rem;">Build the future of healthcare together on Qubic.</p>
                     </div>
                 </div>
             </div>
@@ -959,24 +937,24 @@
         <!-- SLIDE 18: Why We Win -->
         <div class="slide slide-18">
             <div class="content">
-                <h1 class="hero" style="text-align: center;">
+                <h1 class="hero" style="text-align: center; font-size: 2.5rem; margin-bottom: 10px;">
                     WHY UBUNTU PATIENT CARE<br>
-                    <span style="font-size: 3.5rem; opacity: 0.9;">MUST WIN THIS HACKATHON</span>
+                    <span style="font-size: 2rem; opacity: 0.9;">MUST WIN THIS HACKATHON</span>
                 </h1>
-                <ul class="highlight-list" style="margin-top: 60px; font-size: 1.7rem;">
-                    <li>
+                <ul class="highlight-list" style="margin-top: 20px; font-size: 1.2rem;">
+                    <li style="margin-bottom: 12px;">
                         <strong>✓ PRODUCTION READY</strong><br>
                         Not vaporware. 3,891+ lines deployed with 71 real integrations.
                     </li>
-                    <li style="margin-top: 40px;">
+                    <li style="margin-bottom: 12px;">
                         <strong>✓ QUBIC ALIGNED</strong><br>
                         Designed for AIGARTH. Perfect use case for UPoW. Future-proof.
                     </li>
-                    <li style="margin-top: 40px;">
+                    <li style="margin-bottom: 12px;">
                         <strong>✓ HUMAN IMPACT</strong><br>
                         52 Million South Africans need this. NOW.
                     </li>
-                    <li style="margin-top: 40px;">
+                    <li>
                         <strong>✓ ETHICAL FOUNDATION</strong><br>
                         Love > Profit. Merit-based governance. Verifiable credentials.
                     </li>
